@@ -6,12 +6,12 @@ import { images } from "@/lib/images";
 const contacts = [
   {
     label: "Natálie",
-    value: "775 209 128",
+    value: "775\u00A0209\u00A0128",
     href: "tel:+420775209128",
   },
   {
     label: "Lucie",
-    value: "777 029 971",
+    value: "777\u00A0029\u00A0971",
     href: "tel:+420777029971",
   },
 ];
@@ -72,8 +72,8 @@ export default function Kontakt() {
                 </span>
               </a>
               <p className="mt-8 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Nejraději máme domluvené termíny. Stačí zavolat a rezervujeme
-                vám čas, který vám sedí. Volat můžete Natálii nebo Lucii.
+                Pracujeme na objednání. Stačí zavolat a rezervujeme vám termín,
+                který vám sedí. Volat můžete Natálii nebo Lucii.
               </p>
               <a
                 href="https://www.instagram.com/kadernictvi_luna"
@@ -90,7 +90,7 @@ export default function Kontakt() {
             <Reveal delay={0.1}>
               <div className="border border-ivory/10 bg-charcoal/70 p-8 backdrop-blur-sm lg:p-10">
                 <p className="section-label text-[10px] font-medium uppercase text-ivory-dim">
-                  Kontakty
+                  Telefon
                 </p>
                 <dl className="mt-6 divide-y divide-ivory/10">
                   {contacts.map((contact) => (
@@ -114,10 +114,10 @@ export default function Kontakt() {
                 </dl>
                 <div className="mt-6 border-t border-ivory/10 pt-6">
                   <p className="text-[12px] tracking-[0.14em] text-ivory/80">
-                    Mírová 2861/6, Severní Terasa
+                    {"Mírová\u00A02861/6, Severní\u00A0Terasa"}
                   </p>
                   <p className="mt-2 text-[12px] tracking-[0.14em] text-ivory/60">
-                    400 11 Ústí nad Labem
+                    {"400\u00A011 Ústí\u00A0nad\u00A0Labem"}
                   </p>
                   <p className="mt-2 text-[12px] tracking-[0.14em] text-ivory/60">
                     Termín si prosím domluvte telefonicky.

@@ -8,76 +8,85 @@ type PriceGroup = { title: string; note?: string; rows: PriceRow[] };
 const damskaKratke: PriceGroup = {
   title: "Krátké vlasy",
   rows: [
-    { name: "Mytí + foukaná", price: "290 Kč" },
-    { name: "Mytí + střih + foukaná", price: "480 Kč" },
-    { name: "Barva + mytí + foukaná", price: "920 Kč" },
-    { name: "Přeliv + mytí + střih + foukaná", price: "900 Kč" },
-    { name: "Melír + mytí + střih + foukaná", price: "1 350 Kč" },
-    { name: "Melír + mytí + přeliv + střih + foukaná", price: "1 650 Kč" },
-    { name: "Keratin", price: "2 300 Kč" },
+    { name: "Mytí +\u00A0foukaná", price: "290\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "480\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "920\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "900\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0350\u00A0Kč" },
+    {
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      price: "1\u00A0650\u00A0Kč",
+    },
+    { name: "Keratin", price: "2\u00A0300\u00A0Kč" },
   ],
 };
 
 const damskaPolodlouhe: PriceGroup = {
   title: "Polodlouhé vlasy",
   rows: [
-    { name: "Mytí + foukaná", price: "350 Kč" },
-    { name: "Mytí + střih + foukaná", price: "570 Kč" },
-    { name: "Barva + mytí + foukaná", price: "1 220 Kč" },
-    { name: "Přeliv + mytí + střih + foukaná", price: "1 200 Kč" },
-    { name: "Melír + mytí + střih + foukaná", price: "1 750 Kč" },
-    { name: "Melír + mytí + přeliv + střih + foukaná", price: "2 050 Kč" },
-    { name: "Freehand (balayage, ombre)", price: "2 300 Kč" },
-    { name: "Keratin", price: "2 500 Kč" },
+    { name: "Mytí +\u00A0foukaná", price: "350\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "570\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "1\u00A0220\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0200\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0750\u00A0Kč" },
+    {
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      price: "2\u00A0050\u00A0Kč",
+    },
+    { name: "Freehand (balayage, ombre)", price: "2\u00A0300\u00A0Kč" },
+    { name: "Keratin", price: "2\u00A0500\u00A0Kč" },
   ],
 };
 
 const damskaDlouhe: PriceGroup = {
   title: "Dlouhé vlasy",
   rows: [
-    { name: "Mytí + foukaná", price: "410 Kč" },
-    { name: "Mytí + střih + foukaná", price: "620 Kč" },
-    { name: "Barva + mytí + foukaná", price: "1 570 Kč" },
-    { name: "Přeliv + mytí + střih + foukaná", price: "1 550 Kč" },
-    { name: "Melír + mytí + střih + foukaná", price: "2 050 Kč" },
-    { name: "Melír + mytí + přeliv + střih + foukaná", price: "2 450 Kč" },
-    { name: "Freehand (balayage, ombre)", price: "2 700 Kč" },
-    { name: "Keratin", price: "2 700 Kč" },
+    { name: "Mytí +\u00A0foukaná", price: "410\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "620\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "1\u00A0570\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0550\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "2\u00A0050\u00A0Kč" },
+    {
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      price: "2\u00A0450\u00A0Kč",
+    },
+    { name: "Freehand (balayage, ombre)", price: "2\u00A0700\u00A0Kč" },
+    { name: "Keratin", price: "2\u00A0700\u00A0Kč" },
   ],
 };
 
 const pani: PriceGroup = {
   title: "Páni",
   rows: [
-    { name: "Pánský střih", price: "250 Kč" },
-    { name: "Pánský střih s mytím", price: "300 Kč" },
-    { name: "Střih + vousy bez mytí", price: "330 Kč" },
-    { name: "Střih + vousy + mytí", price: "370 Kč" },
-    { name: "Střih strojkem", price: "170 Kč" },
-    { name: "Věneček", price: "120 Kč" },
-    { name: "Úprava vousu", price: "100 Kč" },
+    { name: "Pánský střih", price: "250\u00A0Kč" },
+    { name: "Pánský střih s\u00A0mytím", price: "300\u00A0Kč" },
+    { name: "Střih +\u00A0vousy bez\u00A0mytí", price: "330\u00A0Kč" },
+    { name: "Střih +\u00A0vousy +\u00A0mytí", price: "370\u00A0Kč" },
+    { name: "Střih strojkem", price: "170\u00A0Kč" },
+    { name: "Věneček", price: "120\u00A0Kč" },
+    { name: "Úprava vousu", price: "100\u00A0Kč" },
   ],
 };
 
 const deti: PriceGroup = {
   title: "Děti",
   rows: [
-    { name: "Dívky střih bez mytí", price: "250 Kč" },
-    { name: "Dívky střih s mytím", price: "300 Kč" },
-    { name: "Chlapci střih bez mytí", price: "200 Kč" },
-    { name: "Chlapci střih s mytím", price: "250 Kč" },
+    { name: "Dívky, střih bez\u00A0mytí", price: "250\u00A0Kč" },
+    { name: "Dívky, střih s\u00A0mytím", price: "300\u00A0Kč" },
+    { name: "Chlapci, střih bez\u00A0mytí", price: "200\u00A0Kč" },
+    { name: "Chlapci, střih s\u00A0mytím", price: "250\u00A0Kč" },
   ],
 };
 
 const dalsi: PriceGroup = {
   title: "Další služby",
-  note: "ceny platí při objednání",
+  note: "cena dle náročnosti",
   rows: [
-    { name: "Vymývací lázeň", price: "od 600 Kč" },
-    { name: "Společenský účes", price: "od 600 Kč" },
-    { name: "Melír 1 alobal", price: "70 Kč" },
-    { name: "Ofina", price: "60 Kč" },
-    { name: "Barvení obočí", price: "70 Kč" },
+    { name: "Vymývací lázeň", price: "od\u00A0600\u00A0Kč" },
+    { name: "Společenský účes", price: "od\u00A0600\u00A0Kč" },
+    { name: "Melír 1\u00A0alobal", price: "70\u00A0Kč" },
+    { name: "Ofina", price: "60\u00A0Kč" },
+    { name: "Barvení obočí", price: "70\u00A0Kč" },
   ],
 };
 
@@ -162,14 +171,14 @@ export default function Cenik() {
                 href="tel:+420775209128"
                 className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
               >
-                Natálie 775 209 128
+                Natálie {"775\u00A0209\u00A0128"}
               </a>
               <span className="mx-3 text-ivory-dim">·</span>
               <a
                 href="tel:+420777029971"
                 className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
               >
-                Lucie 777 029 971
+                Lucie {"777\u00A0029\u00A0971"}
               </a>
             </Reveal>
           </div>

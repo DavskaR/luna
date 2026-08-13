@@ -118,17 +118,19 @@ export default function Hero() {
             Kde nás najdete
           </p>
           <p className="mt-1 text-[11px] tracking-[0.18em] text-ivory/85">
-            Mírová 2861/6
+            {"Mírová\u00A02861/6"}
             <br />
-            Severní Terasa
+            {"Severní\u00A0Terasa"}
           </p>
         </div>
         <div className="h-24 w-px bg-gradient-to-b from-transparent via-ivory/40 to-transparent" />
         <div>
           <p className="text-[10px] uppercase tracking-[0.34em] text-ivory-dim">
-            Ústí nad Labem
+            {"Ústí\u00A0nad\u00A0Labem"}
           </p>
-          <p className="mt-1 font-serif text-2xl italic text-ivory">400 11</p>
+          <p className="mt-1 font-serif text-2xl italic text-ivory">
+            {"400\u00A011"}
+          </p>
         </div>
       </div>
 
@@ -139,7 +141,7 @@ export default function Hero() {
       >
         <span className="h-px w-12 bg-ivory/50" />
         <p className="text-[11px] font-medium uppercase tracking-[0.42em] text-ivory/85">
-          ✂ Kadeřnictví, Ústí nad Labem
+          ✂ Kadeřnictví, {"Ústí\u00A0nad\u00A0Labem"}
         </p>
       </div>
 
@@ -190,7 +192,8 @@ export default function Hero() {
           </p>
           <p className="mt-5 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/70">
             Střihy, barvení, melírování, balayage, keratin i svatební účesy.
-            Laureát Orlové krásky 2026 a vítěz soutěže Zlatá firma.
+            Laureát plebiscitu {"Orlové\u00A0krásky"} 2026 a vítěz soutěže
+            {"Zlatá\u00A0firma"}.
           </p>
         </div>
         <div data-hero-fade className="mt-8 flex items-center gap-6">
@@ -198,14 +201,14 @@ export default function Hero() {
             href="tel:+420775209128"
             className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
           >
-            Natálie 775 209 128
+            Natálie {"775\u00A0209\u00A0128"}
           </a>
           <span className="text-ivory-dim">·</span>
           <a
             href="tel:+420777029971"
             className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
           >
-            Lucie 777 029 971
+            Lucie {"777\u00A0029\u00A0971"}
           </a>
         </div>
       </div>

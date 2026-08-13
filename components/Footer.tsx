@@ -4,16 +4,16 @@ const columns = [
   {
     title: "Adresa",
     links: [
-      { label: "Mírová 2861/6", href: "#kontakt" },
-      { label: "Severní Terasa", href: "#kontakt" },
-      { label: "400 11 Ústí nad Labem", href: "#kontakt" },
+      { label: "Mírová\u00A02861/6", href: "#kontakt" },
+      { label: "Severní\u00A0Terasa", href: "#kontakt" },
+      { label: "400\u00A011 Ústí\u00A0nad\u00A0Labem", href: "#kontakt" },
     ],
   },
   {
     title: "Kontakt",
     links: [
-      { label: "Natálie: 775 209 128", href: "tel:+420775209128" },
-      { label: "Lucie: 777 029 971", href: "tel:+420777029971" },
+      { label: "Natálie: 775\u00A0209\u00A0128", href: "tel:+420775209128" },
+      { label: "Lucie: 777\u00A0029\u00A0971", href: "tel:+420777029971" },
       {
         label: "Instagram",
         href: "https://www.instagram.com/kadernictvi_luna",
@@ -67,7 +67,8 @@ export default function Footer() {
                 Ústí nad Labem, Severní Terasa.
               </p>
               <p className="mt-4 max-w-xs text-[10px] uppercase tracking-[0.28em] text-ivory-dim">
-                Laureát Orlové krásky 2026 · Vítěz Zlatá firma
+                Laureát {"Orlové\u00A0krásky"} 2026 · Vítěz soutěže
+                {"Zlatá\u00A0firma"}
               </p>
             </Reveal>
           </div>
@@ -107,7 +108,7 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-4 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 py-7 text-[10px] uppercase tracking-[0.28em] text-ivory-dim sm:flex-row">
-          <p>© 2026 Kadeřnictví LUNA, Ústí nad Labem</p>
+          <p>© 2026 Kadeřnictví LUNA, {"Ústí\u00A0nad\u00A0Labem"}</p>
           <p>
             Ilustrační fotografie:{" "}
             <a

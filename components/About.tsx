@@ -66,20 +66,21 @@ export default function About() {
               <div className="relative border border-ivory/10 bg-charcoal/80 p-8 lg:p-10">
                 <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full border border-ivory/25" />
                 <p className="text-[13px] leading-relaxed tracking-wide text-ivory/70">
-                  Kadeřnictví LUNA najdete na Severní Terase v Ústí nad Labem,
-                  v Mírové ulici, kde se o vaše vlasy staráme s citem,
-                  přesností a dobrým slovem navíc.
+                  Kadeřnictví LUNA najdete na {"Severní\u00A0Terase"} v
+                  {"Ústí\u00A0nad\u00A0Labem"}, v {"Mírové\u00A0ulici"}, kde se
+                  o vaše vlasy staráme s citem, přesností a dobrým slovem
+                  navíc.
                 </p>
                 <p className="mt-5 text-[13px] leading-relaxed tracking-wide text-ivory/70">
                   Od klasického střihu po svatební účes. Vše pod jednou
-                  střechou, pro dámy, pány i děti.
+                  střechou: pro dámy, pány i děti.
                 </p>
                 <div className="mt-8 flex items-center justify-between border-t border-ivory/10 pt-6">
                   <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
-                    Mírová 2861/6
+                    {"Mírová\u00A02861/6"}
                   </span>
                   <span className="font-serif text-lg italic text-ivory-soft">
-                    Severní Terasa
+                    {"Severní\u00A0Terasa"}
                   </span>
                 </div>
               </div>
@@ -112,10 +113,10 @@ export default function About() {
             {/* awards */}
             <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center gap-4">
               <span className="rounded-full border border-ivory/25 px-5 py-2 text-[10px] uppercase tracking-[0.28em] text-ivory/85">
-                ★ Laureát Orlové krásky 2026
+                ★ Laureát {"Orlové\u00A0krásky"} 2026
               </span>
               <span className="rounded-full border border-ivory/25 px-5 py-2 text-[10px] uppercase tracking-[0.28em] text-ivory/85">
-                ★ Vítěz Zlatá firma
+                ★ Vítěz soutěže {"Zlatá\u00A0firma"}
               </span>
             </Reveal>
           </div>
