@@ -23,11 +23,6 @@ export const images = {
     alt: "Matný černý profesionální kartáč na vlasy",
     credit: "Shari Sirotnak / Unsplash",
   },
-  scissors: {
-    src: unsplash("photo-1596362601603-b74f6ef166e4", 900),
-    alt: "Leštěné nerezové kadeřnické nůžky a jemný hřeben",
-    credit: "Unsplash",
-  },
   interior: {
     src: unsplash("photo-1650166958715-35b968fd7cc0", 1800),
     alt: "Tmavý salonní interiér, křeslo u vysokého okna",

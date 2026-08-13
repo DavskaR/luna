@@ -45,12 +45,6 @@ export default function Hero() {
           { y: 140, x: -60, rotate: -18, autoAlpha: 0 },
           { y: 0, x: 0, rotate: -6, autoAlpha: 1, duration: 1.6, ease: "power3.out" },
           1.3
-        )
-        .fromTo(
-          "[data-hero-scissors]",
-          { y: -90, x: 50, rotate: 22, autoAlpha: 0 },
-          { y: 0, x: 0, rotate: 9, autoAlpha: 1, duration: 1.6, ease: "power3.out" },
-          1.45
         );
 
       /* ----------------------------- scroll parallax ----------------------------- */
@@ -89,18 +83,6 @@ export default function Hero() {
           scrub: true,
         },
       });
-
-      gsap.to("[data-hero-scissors]", {
-        y: -160,
-        rotate: 16,
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
     }, section);
 
     /* --------------------------- mouse-move parallax --------------------------- */
@@ -108,7 +90,6 @@ export default function Hero() {
       const nx = e.clientX / window.innerWidth - 0.5;
       const ny = e.clientY / window.innerHeight - 0.5;
       gsap.to("[data-mouse-brush]", { x: nx * -26, y: ny * -20, duration: 1.4, ease: "power2.out" });
-      gsap.to("[data-mouse-scissors]", { x: nx * 30, y: ny * 24, duration: 1.4, ease: "power2.out" });
       gsap.to("[data-mouse-img]", { xPercent: nx * 2.4, yPercent: ny * 2.4, duration: 1.8, ease: "power2.out" });
     };
     window.addEventListener("mousemove", move);
@@ -268,32 +249,6 @@ export default function Hero() {
         <span className="absolute -right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-ivory text-[9px] font-bold text-obsidian shadow-lg">
           01
         </span>
-      </div>
-
-      {/* floating scissors — sharp chrome tile */}
-      <div
-        data-hero-scissors
-        data-mouse-scissors
-        className="absolute right-[8vw] top-[22%] z-20 hidden w-44 will-change-transform lg:block xl:w-52"
-      >
-        <div className="relative rotate-[8deg] overflow-hidden rounded-2xl shadow-[0_30px_90px_rgba(0,0,0,0.8)] ring-1 ring-ivory/20">
-          <div className="relative aspect-[4/3]">
-            <Image
-              src={images.scissors.src}
-              alt={images.scissors.alt}
-              fill
-              sizes="(min-width: 1280px) 208px, 176px"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-transparent to-chrome/15" />
-          </div>
-          <div className="flex items-center justify-between bg-charcoal px-4 py-2.5">
-            <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
-              Precizní střih
-            </span>
-            <span className="h-1.5 w-1.5 rounded-full bg-chrome pulse-ring" />
-          </div>
-        </div>
       </div>
 
       {/* scroll cue */}
