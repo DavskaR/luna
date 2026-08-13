@@ -127,7 +127,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/80" />
       <div className="vignette pointer-events-none absolute inset-0" />
 
-      {/* meta column — right */}
+      {/* meta column: right */}
       <div
         data-hero-fade
         className="absolute right-10 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-end gap-12 text-right lg:flex"
@@ -158,7 +158,7 @@ export default function Hero() {
       >
         <span className="h-px w-12 bg-ivory/50" />
         <p className="text-[11px] font-medium uppercase tracking-[0.42em] text-ivory/85">
-          ✂ Kadeřnictví — Ústí nad Labem
+          ✂ Kadeřnictví, Ústí nad Labem
         </p>
       </div>
 
@@ -199,7 +199,7 @@ export default function Hero() {
         </h1>
       </div>
 
-      {/* info tile — bottom left */}
+      {/* info tile: bottom left */}
       <div className="absolute bottom-24 left-[6vw] z-10 max-w-md lg:bottom-28">
         <div data-hero-fade className="border-l border-ivory/30 pl-6 lg:pl-8">
           <p className="font-serif text-xl italic leading-snug text-ivory-soft lg:text-2xl">
@@ -229,7 +229,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* floating brush — soft focus foreground */}
+      {/* floating brush: soft focus foreground */}
       <div
         data-hero-brush
         data-mouse-brush

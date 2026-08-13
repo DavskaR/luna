@@ -38,7 +38,7 @@ export default function Nav() {
           href="#top"
           onClick={(e) => go(e, "#top")}
           className="flex items-center gap-3 group"
-          aria-label="Kadeřnictví LUNA — úvod"
+          aria-label="Kadeřnictví LUNA, úvod"
         >
           <span className="relative flex h-11 w-11 items-center justify-center">
             <svg viewBox="0 0 44 44" className="absolute inset-0 h-full w-full">

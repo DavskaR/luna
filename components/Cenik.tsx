@@ -62,10 +62,10 @@ const pani: PriceGroup = {
 const deti: PriceGroup = {
   title: "Děti",
   rows: [
-    { name: "Dívky — střih bez mytí", price: "250 Kč" },
-    { name: "Dívky — střih s mytím", price: "300 Kč" },
-    { name: "Chlapci — střih bez mytí", price: "200 Kč" },
-    { name: "Chlapci — střih s mytím", price: "250 Kč" },
+    { name: "Dívky střih bez mytí", price: "250 Kč" },
+    { name: "Dívky střih s mytím", price: "300 Kč" },
+    { name: "Chlapci střih bez mytí", price: "200 Kč" },
+    { name: "Chlapci střih s mytím", price: "250 Kč" },
   ],
 };
 
@@ -138,7 +138,7 @@ export default function Cenik() {
                 <span className="italic text-ivory-soft">poctivá práce.</span>
               </h2>
               <p className="mt-6 max-w-xs text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Každá návštěva začíná konzultací — poradíme, co vašim vlasům
+                Každá návštěva začíná konzultací. Poradíme, co vašim vlasům
                 svědčí, a cenu znáte předem.
               </p>
             </Reveal>

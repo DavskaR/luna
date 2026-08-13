@@ -79,7 +79,7 @@ export default function Galerie() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-              Inspirace z naší tvorby — od platinových blond po hluboké tmavé
+              Inspirace z naší tvorby: od platinových blond po hluboké tmavé
               tóny. Vaše vysněné vlasy začínají tady.
             </p>
           </Reveal>

@@ -7,7 +7,7 @@ const services = [
   {
     index: "01",
     title: "Dámské",
-    text: "Střihy, barvení, melíry, balayage i keratin — šité na míru každé klientce.",
+    text: "Střihy, barvení, melíry, balayage i keratin, šité na míru každé klientce.",
   },
   {
     index: "02",
@@ -17,7 +17,7 @@ const services = [
   {
     index: "03",
     title: "Dětské",
-    text: "Trpělivý přístup a šikovné ruce — první střih bez slziček.",
+    text: "Trpělivý přístup a šikovné ruce. První střih bez slziček.",
   },
 ];
 
@@ -66,12 +66,12 @@ export default function About() {
               <div className="relative border border-ivory/10 bg-charcoal/80 p-8 lg:p-10">
                 <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full border border-ivory/25" />
                 <p className="text-[13px] leading-relaxed tracking-wide text-ivory/70">
-                  Kadeřnictví LUNA najdete na Severní Terase v Ústí nad Labem —
+                  Kadeřnictví LUNA najdete na Severní Terase v Ústí nad Labem,
                   v Mírové ulici, kde se o vaše vlasy staráme s citem,
                   přesností a dobrým slovem navíc.
                 </p>
                 <p className="mt-5 text-[13px] leading-relaxed tracking-wide text-ivory/70">
-                  Od klasického střihu po svatební účes — vše pod jednou
+                  Od klasického střihu po svatební účes. Vše pod jednou
                   střechou, pro dámy, pány i děti.
                 </p>
                 <div className="mt-8 flex items-center justify-between border-t border-ivory/10 pt-6">
@@ -134,7 +134,7 @@ export default function About() {
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_60px_rgba(10,9,8,0.9)]" />
                 </div>
                 <figcaption className="mt-4 text-center text-[9px] uppercase tracking-[0.34em] text-ivory-dim">
-                  Péče s citem — každý den
+                  Péče s citem, každý den
                 </figcaption>
                 <span className="chrome-text absolute -left-8 top-8 font-serif text-6xl italic opacity-80">
                   ✂

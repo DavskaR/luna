@@ -72,7 +72,7 @@ export default function Kontakt() {
                 </span>
               </a>
               <p className="mt-8 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Nejraději máme domluvené termíny — stačí zavolat a rezervujeme
+                Nejraději máme domluvené termíny. Stačí zavolat a rezervujeme
                 vám čas, který vám sedí. Volat můžete Natálii nebo Lucii.
               </p>
               <a

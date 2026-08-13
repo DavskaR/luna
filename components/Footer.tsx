@@ -63,7 +63,7 @@ export default function Footer() {
                 </span>
               </div>
               <p className="mt-8 max-w-xs text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Profesionální péče o vaše vlasy — dámské, pánské i dětské.
+                Profesionální péče o vaše vlasy. Dámské, pánské i dětské.
                 Ústí nad Labem, Severní Terasa.
               </p>
               <p className="mt-4 max-w-xs text-[10px] uppercase tracking-[0.28em] text-ivory-dim">
@@ -107,7 +107,7 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-4 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 py-7 text-[10px] uppercase tracking-[0.28em] text-ivory-dim sm:flex-row">
-          <p>© 2026 Kadeřnictví LUNA — Ústí nad Labem</p>
+          <p>© 2026 Kadeřnictví LUNA, Ústí nad Labem</p>
           <p>
             Ilustrační fotografie:{" "}
             <a
