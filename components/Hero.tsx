@@ -188,7 +188,7 @@ export default function Hero() {
           <p className="font-serif text-xl italic leading-snug text-ivory-soft lg:text-2xl">
             Profesionální péče o vaše vlasy
             <br />
-            dámské, pánské i dětské.
+            dámské, pánské i ty dětské.
           </p>
           <p className="mt-5 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/70">
             Střihy, barvení, melírování, balayage, keratin i svatební účesy.
