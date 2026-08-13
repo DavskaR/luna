@@ -18,11 +18,6 @@ export const images = {
     alt: "Editorial portrét ženy v černém klobouku",
     credit: "Unsplash",
   },
-  brush: {
-    src: unsplash("photo-1527799820374-dcf8d9d4a388", 900),
-    alt: "Matný černý profesionální kartáč na vlasy",
-    credit: "Shari Sirotnak / Unsplash",
-  },
   interior: {
     src: unsplash("photo-1650166958715-35b968fd7cc0", 1800),
     alt: "Tmavý salonní interiér, křeslo u vysokého okna",

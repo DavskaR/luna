@@ -39,12 +39,6 @@ export default function Hero() {
           { y: 36, autoAlpha: 0 },
           { y: 0, autoAlpha: 1, duration: 1.1, stagger: 0.12 },
           1.05
-        )
-        .fromTo(
-          "[data-hero-brush]",
-          { y: 140, x: -60, rotate: -18, autoAlpha: 0 },
-          { y: 0, x: 0, rotate: -6, autoAlpha: 1, duration: 1.6, ease: "power3.out" },
-          1.3
         );
 
       /* ----------------------------- scroll parallax ----------------------------- */
@@ -71,25 +65,12 @@ export default function Hero() {
           scrub: true,
         },
       });
-
-      gsap.to("[data-hero-brush]", {
-        y: 190,
-        rotate: -20,
-        ease: "none",
-        scrollTrigger: {
-          trigger: section,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
     }, section);
 
     /* --------------------------- mouse-move parallax --------------------------- */
     const move = (e: MouseEvent) => {
       const nx = e.clientX / window.innerWidth - 0.5;
       const ny = e.clientY / window.innerHeight - 0.5;
-      gsap.to("[data-mouse-brush]", { x: nx * -26, y: ny * -20, duration: 1.4, ease: "power2.out" });
       gsap.to("[data-mouse-img]", { xPercent: nx * 2.4, yPercent: ny * 2.4, duration: 1.8, ease: "power2.out" });
     };
     window.addEventListener("mousemove", move);
@@ -227,28 +208,6 @@ export default function Hero() {
             Lucie 777 029 971
           </a>
         </div>
-      </div>
-
-      {/* floating brush: soft focus foreground */}
-      <div
-        data-hero-brush
-        data-mouse-brush
-        className="absolute -bottom-14 left-[38vw] z-20 hidden aspect-square w-56 will-change-transform lg:block xl:w-64"
-      >
-        <div className="relative h-full w-full overflow-hidden rounded-full shadow-[0_30px_80px_rgba(0,0,0,0.75)] ring-1 ring-ivory/15">
-          <Image
-            src={images.brush.src}
-            alt={images.brush.alt}
-            fill
-            sizes="(min-width: 1280px) 256px, 224px"
-            className="object-cover opacity-90 blur-[1.2px]"
-          />
-          <div className="absolute inset-0 rounded-full bg-obsidian/20" />
-          <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-black/40" />
-        </div>
-        <span className="absolute -right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-ivory text-[9px] font-bold text-obsidian shadow-lg">
-          01
-        </span>
       </div>
 
       {/* scroll cue */}
