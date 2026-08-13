@@ -66,14 +66,17 @@ export default function About() {
               <div className="relative border border-ivory/10 bg-charcoal/80 p-8 lg:p-10">
                 <span className="absolute -left-3 -top-3 h-6 w-6 rounded-full border border-ivory/25" />
                 <p className="text-[13px] leading-relaxed tracking-wide text-ivory/70">
-                  Kadeřnictví LUNA najdete na {"Severní\u00A0Terase"} v
+                  Kadeřnictví LUNA najdete na {"Severní\u00A0Terase"}
+                  <br />
                   {"Ústí\u00A0nad\u00A0Labem"}, v {"Mírové\u00A0ulici"}, kde se
-                  o vaše vlasy staráme s citem, přesností a dobrým slovem
-                  navíc.
+                  o vaše vlasy
+                  <br />
+                  staráme s citem, přesností a dobrým slovem navíc.
                 </p>
                 <p className="mt-5 text-[13px] leading-relaxed tracking-wide text-ivory/70">
-                  Od klasického střihu po svatební účes. Vše pod jednou
-                  střechou: pro dámy, pány i děti.
+                  Od klasického střihu po svatební účes.
+                  <br />
+                  Vše pod jednou střechou: pro dámy, pány i děti.
                 </p>
                 <div className="mt-8 flex items-center justify-between border-t border-ivory/10 pt-6">
                   <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
