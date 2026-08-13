@@ -67,8 +67,7 @@ export default function Footer() {
                 Ústí nad Labem, Severní Terasa.
               </p>
               <p className="mt-4 max-w-xs text-[10px] uppercase tracking-[0.28em] text-ivory-dim">
-                Laureát {"Orlové\u00A0krásky"} 2026 · Vítěz soutěže
-                {"Zlatá\u00A0firma"}
+                Laureát {"Orlové\u00A0krásky"} 2026 · Vítěz soutěže {"Zlatá\u00A0firma"}
               </p>
             </Reveal>
           </div>

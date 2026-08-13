@@ -8,13 +8,13 @@ type PriceGroup = { title: string; note?: string; rows: PriceRow[] };
 const damskaKratke: PriceGroup = {
   title: "Krátké vlasy",
   rows: [
-    { name: "Mytí +\u00A0foukaná", price: "290\u00A0Kč" },
-    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "480\u00A0Kč" },
-    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "920\u00A0Kč" },
-    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "900\u00A0Kč" },
-    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0350\u00A0Kč" },
+    { name: "Mytí +\u00A0foukaní", price: "290\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaní", price: "480\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaní", price: "920\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "900\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "1\u00A0350\u00A0Kč" },
     {
-      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaní",
       price: "1\u00A0650\u00A0Kč",
     },
     { name: "Keratin", price: "2\u00A0300\u00A0Kč" },
@@ -24,13 +24,13 @@ const damskaKratke: PriceGroup = {
 const damskaPolodlouhe: PriceGroup = {
   title: "Polodlouhé vlasy",
   rows: [
-    { name: "Mytí +\u00A0foukaná", price: "350\u00A0Kč" },
-    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "570\u00A0Kč" },
-    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "1\u00A0220\u00A0Kč" },
-    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0200\u00A0Kč" },
-    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0750\u00A0Kč" },
+    { name: "Mytí +\u00A0foukaní", price: "350\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaní", price: "570\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaní", price: "1\u00A0220\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "1\u00A0200\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "1\u00A0750\u00A0Kč" },
     {
-      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaní",
       price: "2\u00A0050\u00A0Kč",
     },
     { name: "Freehand (balayage, ombre)", price: "2\u00A0300\u00A0Kč" },
@@ -41,13 +41,13 @@ const damskaPolodlouhe: PriceGroup = {
 const damskaDlouhe: PriceGroup = {
   title: "Dlouhé vlasy",
   rows: [
-    { name: "Mytí +\u00A0foukaná", price: "410\u00A0Kč" },
-    { name: "Mytí +\u00A0střih +\u00A0foukaná", price: "620\u00A0Kč" },
-    { name: "Barva +\u00A0mytí +\u00A0foukaná", price: "1\u00A0570\u00A0Kč" },
-    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "1\u00A0550\u00A0Kč" },
-    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaná", price: "2\u00A0050\u00A0Kč" },
+    { name: "Mytí +\u00A0foukaní", price: "410\u00A0Kč" },
+    { name: "Mytí +\u00A0střih +\u00A0foukaní", price: "620\u00A0Kč" },
+    { name: "Barva +\u00A0mytí +\u00A0foukaní", price: "1\u00A0570\u00A0Kč" },
+    { name: "Přeliv +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "1\u00A0550\u00A0Kč" },
+    { name: "Melír +\u00A0mytí +\u00A0střih +\u00A0foukaní", price: "2\u00A0050\u00A0Kč" },
     {
-      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaná",
+      name: "Melír +\u00A0mytí +\u00A0přeliv +\u00A0střih +\u00A0foukaní",
       price: "2\u00A0450\u00A0Kč",
     },
     { name: "Freehand (balayage, ombre)", price: "2\u00A0700\u00A0Kč" },
@@ -166,17 +166,16 @@ export default function Cenik() {
                 </p>
               </div>
             </Reveal>
-            <Reveal delay={0.22} className="mt-8">
+            <Reveal delay={0.22} className="mt-8 flex flex-col gap-3">
               <a
                 href="tel:+420775209128"
-                className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
+                className="link-line w-fit text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
               >
                 Natálie {"775\u00A0209\u00A0128"}
               </a>
-              <span className="mx-3 text-ivory-dim">·</span>
               <a
                 href="tel:+420777029971"
-                className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
+                className="link-line w-fit text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
               >
                 Lucie {"777\u00A0029\u00A0971"}
               </a>
