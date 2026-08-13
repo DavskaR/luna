@@ -15,7 +15,7 @@ const layout = [
   { span: "lg:col-span-6", aspect: "aspect-[16/10]", item: images.lookbook[5] },
 ];
 
-export default function Lookbook() {
+export default function Galerie() {
   const gridRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -67,20 +67,20 @@ export default function Lookbook() {
   }, []);
 
   return (
-    <section id="lookbook" className="relative bg-coal py-28 lg:py-40">
+    <section id="galerie" className="relative bg-coal py-28 lg:py-40">
       <div className="mx-auto max-w-[1500px] px-6 lg:px-12">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <Reveal className="flex items-center gap-5">
             <span className="font-serif text-sm italic text-ivory-dim">03</span>
             <span className="h-px w-16 bg-ivory/30" />
             <p className="section-label text-[10px] font-medium uppercase text-ivory-dim">
-              Lookbook — Hiver
+              Galerie
             </p>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-              Une sélection de silhouettes récentes, photographiées dans
-              l&rsquo;atelier — ombre et lumière, matière et mouvement.
+              Inspirace z naší tvorby — od platinových blond po hluboké tmavé
+              tóny. Vaše vysněné vlasy začínají tady.
             </p>
           </Reveal>
         </div>
@@ -121,7 +121,7 @@ export default function Lookbook() {
                   {cell.item.caption}
                 </span>
                 <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
-                  Hiver 25
+                  Inspirace
                 </span>
               </figcaption>
             </figure>

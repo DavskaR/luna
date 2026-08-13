@@ -4,9 +4,9 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
-import Services from "@/components/Services";
-import Lookbook from "@/components/Lookbook";
-import Manifesto from "@/components/Manifesto";
+import Cenik from "@/components/Cenik";
+import Galerie from "@/components/Galerie";
+import Kontakt from "@/components/Kontakt";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,9 +19,9 @@ export default function Home() {
         <Hero />
         <Marquee />
         <About />
-        <Services />
-        <Lookbook />
-        <Manifesto />
+        <Cenik />
+        <Galerie />
+        <Kontakt />
       </main>
       <Footer />
     </>

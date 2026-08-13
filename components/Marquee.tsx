@@ -1,12 +1,12 @@
 const items = [
-  "Coupe",
-  "Couleur",
-  "Coiffure",
-  "Soin Rituel",
+  "Dámské střihy",
+  "Pánské střihy",
+  "Dětské střihy",
+  "Barvení",
+  "Melírování",
   "Balayage",
-  "Lissage",
-  "Coiffure Événement",
-  "Conseil Privé",
+  "Keratin",
+  "Svatební účesy",
 ];
 
 export default function Marquee() {

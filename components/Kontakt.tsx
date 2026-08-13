@@ -3,15 +3,22 @@ import Reveal from "@/components/Reveal";
 import SplitWords from "@/components/SplitWords";
 import { images } from "@/lib/images";
 
-const hours = [
-  { day: "Mardi — Vendredi", time: "10:00 — 20:00" },
-  { day: "Samedi", time: "09:00 — 19:00" },
-  { day: "Dimanche — Lundi", time: "Sur rendez-vous privé" },
+const contacts = [
+  {
+    label: "Natálie",
+    value: "775 209 128",
+    href: "tel:+420775209128",
+  },
+  {
+    label: "Lucie",
+    value: "777 029 971",
+    href: "tel:+420777029971",
+  },
 ];
 
-export default function Manifesto() {
+export default function Kontakt() {
   return (
-    <section id="rendez-vous" className="relative overflow-hidden bg-obsidian">
+    <section id="kontakt" className="relative overflow-hidden bg-obsidian">
       {/* interior backdrop */}
       <div className="absolute inset-0">
         <Image
@@ -30,19 +37,22 @@ export default function Manifesto() {
           <span className="font-serif text-sm italic text-ivory-dim">04</span>
           <span className="h-px w-16 bg-ivory/30" />
           <p className="section-label text-[10px] font-medium uppercase text-ivory-dim">
-            Rendez-vous
+            Kontakt
           </p>
         </Reveal>
 
         <h2 className="mt-16 max-w-5xl font-serif text-4xl font-medium leading-[1.12] text-ivory sm:text-5xl lg:mt-24 lg:text-7xl">
-          <SplitWords text="La beauté n'est pas" wordClassName="mr-[0.24em]" />
           <SplitWords
-            text="un ornement."
+            text="Domluvte si termín."
+            wordClassName="mr-[0.24em]"
+          />
+          <SplitWords
+            text="Postaráme se"
             wordClassName="mr-[0.24em] italic text-ivory-soft"
             delay={0.12}
           />
           <SplitWords
-            text="C'est une attitude."
+            text="o zbytek."
             wordClassName="mr-[0.24em] italic text-ivory-soft"
             delay={0.22}
           />
@@ -52,19 +62,27 @@ export default function Manifesto() {
           <div className="lg:col-span-5">
             <Reveal>
               <a
-                href="#top"
+                href="tel:+420775209128"
                 className="group relative inline-flex items-center gap-5 overflow-hidden rounded-full border border-ivory/40 px-10 py-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory transition-colors duration-500 hover:text-obsidian"
               >
                 <span className="absolute inset-0 -translate-x-full bg-ivory transition-transform duration-500 ease-out group-hover:translate-x-0" />
-                <span className="relative">Prendre rendez-vous</span>
+                <span className="relative">Zavolejte nám</span>
                 <span className="relative transition-transform duration-500 group-hover:translate-x-2">
                   →
                 </span>
               </a>
               <p className="mt-8 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Les places sont limitées à douze rendez-vous par jour. Chaque
-                consultation commence par un café, une écoute et une esquisse.
+                Nejraději máme domluvené termíny — stačí zavolat a rezervujeme
+                vám čas, který vám sedí. Volat můžete Natálii nebo Lucii.
               </p>
+              <a
+                href="https://www.instagram.com/kadernictvi_luna"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link-line mt-6 inline-block text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
+              >
+                @kadernictvi_luna na Instagramu
+              </a>
             </Reveal>
           </div>
 
@@ -72,29 +90,37 @@ export default function Manifesto() {
             <Reveal delay={0.1}>
               <div className="border border-ivory/10 bg-charcoal/70 p-8 backdrop-blur-sm lg:p-10">
                 <p className="section-label text-[10px] font-medium uppercase text-ivory-dim">
-                  Heures
+                  Kontakty
                 </p>
                 <dl className="mt-6 divide-y divide-ivory/10">
-                  {hours.map((h) => (
+                  {contacts.map((contact) => (
                     <div
-                      key={h.day}
+                      key={contact.value}
                       className="flex items-baseline justify-between py-4"
                     >
                       <dt className="text-[12px] tracking-[0.14em] text-ivory/80">
-                        {h.day}
+                        {contact.label}
                       </dt>
-                      <dd className="font-serif text-sm italic text-ivory-soft">
-                        {h.time}
+                      <dd>
+                        <a
+                          href={contact.href}
+                          className="font-serif text-sm italic text-ivory-soft transition-colors hover:text-ivory"
+                        >
+                          {contact.value}
+                        </a>
                       </dd>
                     </div>
                   ))}
                 </dl>
                 <div className="mt-6 border-t border-ivory/10 pt-6">
                   <p className="text-[12px] tracking-[0.14em] text-ivory/80">
-                    12 Rue de la Lune, 75001 Paris
+                    Mírová 2861/6, Severní Terasa
                   </p>
                   <p className="mt-2 text-[12px] tracking-[0.14em] text-ivory/60">
-                    +33 1 42 60 00 00 — atelier@luna.paris
+                    400 11 Ústí nad Labem
+                  </p>
+                  <p className="mt-2 text-[12px] tracking-[0.14em] text-ivory/60">
+                    Termín si prosím domluvte telefonicky.
                   </p>
                 </div>
               </div>

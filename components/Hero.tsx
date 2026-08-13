@@ -101,7 +101,6 @@ export default function Hero() {
           scrub: true,
         },
       });
-
     }, section);
 
     /* --------------------------- mouse-move parallax --------------------------- */
@@ -154,20 +153,20 @@ export default function Hero() {
       >
         <div>
           <p className="text-[10px] uppercase tracking-[0.34em] text-ivory-dim">
-            Maison fondée
+            Kde nás najdete
           </p>
-          <p className="mt-1 font-serif text-2xl italic text-ivory">2012</p>
+          <p className="mt-1 text-[11px] tracking-[0.18em] text-ivory/85">
+            Mírová 2861/6
+            <br />
+            Severní Terasa
+          </p>
         </div>
         <div className="h-24 w-px bg-gradient-to-b from-transparent via-ivory/40 to-transparent" />
         <div>
           <p className="text-[10px] uppercase tracking-[0.34em] text-ivory-dim">
-            Atelier
+            Ústí nad Labem
           </p>
-          <p className="mt-1 text-[11px] tracking-[0.18em] text-ivory/85">
-            48.8566° N
-            <br />
-            2.3522° E
-          </p>
+          <p className="mt-1 font-serif text-2xl italic text-ivory">400 11</p>
         </div>
       </div>
 
@@ -178,7 +177,7 @@ export default function Hero() {
       >
         <span className="h-px w-12 bg-ivory/50" />
         <p className="text-[11px] font-medium uppercase tracking-[0.42em] text-ivory/85">
-          Maison de Coiffure
+          ✂ Kadeřnictví — Ústí nad Labem
         </p>
       </div>
 
@@ -221,28 +220,31 @@ export default function Hero() {
 
       {/* info tile — bottom left */}
       <div className="absolute bottom-24 left-[6vw] z-10 max-w-md lg:bottom-28">
-        <div
-          data-hero-fade
-          className="border-l border-ivory/30 pl-6 lg:pl-8"
-        >
+        <div data-hero-fade className="border-l border-ivory/30 pl-6 lg:pl-8">
           <p className="font-serif text-xl italic leading-snug text-ivory-soft lg:text-2xl">
-            Sculptée dans l&rsquo;ombre,
+            Profesionální péče o vaše vlasy —
             <br />
-            révélée par la lumière.
+            dámské, pánské i dětské.
           </p>
           <p className="mt-5 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/70">
-            Precision cuts, couture colour and ritual care — an atelier where
-            hair is treated as haute couture.
+            Střihy, barvení, melírování, balayage, keratin i svatební účesy.
+            Laureát Orlové krásky 2026 a vítěz soutěže Zlatá firma.
           </p>
         </div>
         <div data-hero-fade className="mt-8 flex items-center gap-6">
           <a
-            href="#rendez-vous"
+            href="tel:+420775209128"
             className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
           >
-            Prendre rendez-vous
+            Natálie 775 209 128
           </a>
-          <span className="text-ivory-dim">→</span>
+          <span className="text-ivory-dim">·</span>
+          <a
+            href="tel:+420777029971"
+            className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
+          >
+            Lucie 777 029 971
+          </a>
         </div>
       </div>
 
@@ -287,7 +289,7 @@ export default function Hero() {
           </div>
           <div className="flex items-center justify-between bg-charcoal px-4 py-2.5">
             <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
-              Acier japonais
+              Precizní střih
             </span>
             <span className="h-1.5 w-1.5 rounded-full bg-chrome pulse-ring" />
           </div>
@@ -300,7 +302,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
       >
         <span className="text-[9px] uppercase tracking-[0.42em] text-ivory/60">
-          Scroll
+          Posuňte dolů
         </span>
         <span className="relative h-10 w-px overflow-hidden bg-ivory/15">
           <span className="scroll-dot absolute left-0 top-0 h-3 w-px bg-ivory" />

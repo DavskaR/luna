@@ -2,28 +2,31 @@ import Reveal from "@/components/Reveal";
 
 const columns = [
   {
-    title: "Atelier",
+    title: "Adresa",
     links: [
-      { label: "12 Rue de la Lune", href: "#atelier" },
-      { label: "75001 Paris", href: "#atelier" },
-      { label: "48.8566° N, 2.3522° E", href: "#top" },
+      { label: "Mírová 2861/6", href: "#kontakt" },
+      { label: "Severní Terasa", href: "#kontakt" },
+      { label: "400 11 Ústí nad Labem", href: "#kontakt" },
     ],
   },
   {
-    title: "Contact",
+    title: "Kontakt",
     links: [
-      { label: "+33 1 42 60 00 00", href: "#rendez-vous" },
-      { label: "atelier@luna.paris", href: "#rendez-vous" },
-      { label: "Instagram", href: "#top" },
+      { label: "Natálie: 775 209 128", href: "tel:+420775209128" },
+      { label: "Lucie: 777 029 971", href: "tel:+420777029971" },
+      {
+        label: "Instagram",
+        href: "https://www.instagram.com/kadernictvi_luna",
+      },
     ],
   },
   {
     title: "Menu",
     links: [
-      { label: "L\u2019Atelier", href: "#atelier" },
-      { label: "La Carte", href: "#la-carte" },
-      { label: "Lookbook", href: "#lookbook" },
-      { label: "Rendez-vous", href: "#rendez-vous" },
+      { label: "O nás", href: "#o-nas" },
+      { label: "Ceník", href: "#cenik" },
+      { label: "Galerie", href: "#galerie" },
+      { label: "Kontakt", href: "#kontakt" },
     ],
   },
 ];
@@ -50,13 +53,21 @@ export default function Footer() {
                   </svg>
                   <span className="relative block h-3 w-3 rounded-full bg-ivory" />
                 </span>
-                <span className="font-serif text-lg tracking-[0.3em] text-ivory">
-                  LUNA
+                <span className="flex flex-col leading-none">
+                  <span className="font-serif text-lg tracking-[0.3em] text-ivory">
+                    LUNA
+                  </span>
+                  <span className="mt-1 text-[8px] uppercase tracking-[0.42em] text-ivory-dim">
+                    Kadeřnictví
+                  </span>
                 </span>
               </div>
               <p className="mt-8 max-w-xs text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Maison de coiffure — sculptée dans l&rsquo;ombre, révélée par la
-                lumière. Paris, depuis 2012.
+                Profesionální péče o vaše vlasy — dámské, pánské i dětské.
+                Ústí nad Labem, Severní Terasa.
+              </p>
+              <p className="mt-4 max-w-xs text-[10px] uppercase tracking-[0.28em] text-ivory-dim">
+                Laureát Orlové krásky 2026 · Vítěz Zlatá firma
               </p>
             </Reveal>
           </div>
@@ -96,9 +107,9 @@ export default function Footer() {
         </Reveal>
 
         <div className="mt-4 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 py-7 text-[10px] uppercase tracking-[0.28em] text-ivory-dim sm:flex-row">
-          <p>© 2026 Luna Maison de Coiffure</p>
+          <p>© 2026 Kadeřnictví LUNA — Ústí nad Labem</p>
           <p>
-            Photography via{" "}
+            Ilustrační fotografie:{" "}
             <a
               href="https://unsplash.com"
               target="_blank"

@@ -4,10 +4,10 @@ import { useEffect, useState, type MouseEvent } from "react";
 import { scrollToId } from "@/lib/scroll";
 
 const links = [
-  { label: "L\u2019Atelier", hash: "#atelier" },
-  { label: "La Carte", hash: "#la-carte" },
-  { label: "Lookbook", hash: "#lookbook" },
-  { label: "Rendez-vous", hash: "#rendez-vous" },
+  { label: "O nás", hash: "#o-nas" },
+  { label: "Ceník", hash: "#cenik" },
+  { label: "Galerie", hash: "#galerie" },
+  { label: "Kontakt", hash: "#kontakt" },
 ];
 
 export default function Nav() {
@@ -38,7 +38,7 @@ export default function Nav() {
           href="#top"
           onClick={(e) => go(e, "#top")}
           className="flex items-center gap-3 group"
-          aria-label="LUNA — home"
+          aria-label="Kadeřnictví LUNA — úvod"
         >
           <span className="relative flex h-11 w-11 items-center justify-center">
             <svg viewBox="0 0 44 44" className="absolute inset-0 h-full w-full">
@@ -63,8 +63,13 @@ export default function Nav() {
             </svg>
             <span className="relative block h-3.5 w-3.5 rounded-full bg-ivory transition-transform duration-500 group-hover:scale-125" />
           </span>
-          <span className="font-serif text-xl tracking-[0.3em] text-ivory">
-            LUNA
+          <span className="flex flex-col leading-none">
+            <span className="font-serif text-xl tracking-[0.3em] text-ivory">
+              LUNA
+            </span>
+            <span className="mt-1 text-[8px] uppercase tracking-[0.42em] text-ivory-dim">
+              Kadeřnictví
+            </span>
           </span>
         </a>
 
@@ -86,12 +91,11 @@ export default function Nav() {
         </ul>
 
         <a
-          href="#rendez-vous"
-          onClick={(e) => go(e, "#rendez-vous")}
+          href="tel:+420775209128"
           className="group relative hidden overflow-hidden rounded-full border border-ivory/40 px-6 py-2.5 text-[11px] font-semibold uppercase tracking-[0.28em] text-ivory transition-colors duration-500 hover:text-obsidian sm:block"
         >
           <span className="absolute inset-0 -translate-x-full bg-ivory transition-transform duration-500 ease-out group-hover:translate-x-0" />
-          <span className="relative">Book</span>
+          <span className="relative">Objednat se</span>
         </a>
 
         <button
