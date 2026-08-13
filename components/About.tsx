@@ -43,20 +43,26 @@ export default function About() {
           {/* statement */}
           <div className="lg:col-span-7">
             <h2 className="font-serif text-4xl font-medium leading-[1.08] text-ivory sm:text-5xl xl:text-6xl">
-              <SplitWords
-                text="Vlasy nejsou jen účes."
-                wordClassName="mr-[0.26em]"
-              />
-              <SplitWords
-                text="Jsou první věta,"
-                wordClassName="mr-[0.26em] italic text-ivory-soft"
-                delay={0.15}
-              />
-              <SplitWords
-                text="kterou o vás řeknou."
-                wordClassName="mr-[0.26em] italic text-ivory-soft"
-                delay={0.25}
-              />
+              <span className="block">
+                <SplitWords
+                  text="Vlasy nejsou jen účes."
+                  wordClassName="mr-[0.26em]"
+                />
+              </span>
+              <span className="block">
+                <SplitWords
+                  text="Jsou první věta,"
+                  wordClassName="mr-[0.26em] italic text-ivory-soft"
+                  delay={0.15}
+                />
+              </span>
+              <span className="block">
+                <SplitWords
+                  text="kterou o vás řeknou."
+                  wordClassName="mr-[0.26em] italic text-ivory-soft"
+                  delay={0.25}
+                />
+              </span>
             </h2>
           </div>
 

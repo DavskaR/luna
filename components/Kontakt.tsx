@@ -42,20 +42,26 @@ export default function Kontakt() {
         </Reveal>
 
         <h2 className="mt-16 max-w-5xl font-serif text-4xl font-medium leading-[1.12] text-ivory sm:text-5xl lg:mt-24 lg:text-7xl">
-          <SplitWords
-            text="Domluvte si termín."
-            wordClassName="mr-[0.24em]"
-          />
-          <SplitWords
-            text="Postaráme se"
-            wordClassName="mr-[0.24em] italic text-ivory-soft"
-            delay={0.12}
-          />
-          <SplitWords
-            text="o zbytek."
-            wordClassName="mr-[0.24em] italic text-ivory-soft"
-            delay={0.22}
-          />
+          <span className="block">
+            <SplitWords
+              text="Domluvte si termín."
+              wordClassName="mr-[0.24em]"
+            />
+          </span>
+          <span className="block">
+            <SplitWords
+              text="Postaráme se"
+              wordClassName="mr-[0.24em] italic text-ivory-soft"
+              delay={0.12}
+            />
+          </span>
+          <span className="block">
+            <SplitWords
+              text="o zbytek."
+              wordClassName="mr-[0.24em] italic text-ivory-soft"
+              delay={0.22}
+            />
+          </span>
         </h2>
 
         <div className="mt-20 grid grid-cols-1 gap-14 lg:mt-28 lg:grid-cols-12 lg:gap-8">
