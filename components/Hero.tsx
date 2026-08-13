@@ -203,7 +203,7 @@ export default function Hero() {
       <div className="absolute bottom-24 left-[6vw] z-10 max-w-md lg:bottom-28">
         <div data-hero-fade className="border-l border-ivory/30 pl-6 lg:pl-8">
           <p className="font-serif text-xl italic leading-snug text-ivory-soft lg:text-2xl">
-            Profesionální péče o vaše vlasy —
+            Profesionální péče o vaše vlasy
             <br />
             dámské, pánské i dětské.
           </p>
