@@ -63,8 +63,11 @@ export default function Footer() {
                 </span>
               </div>
               <p className="mt-8 max-w-xs text-[13px] leading-relaxed tracking-wide text-ivory/60">
-                Profesionální péče o vaše vlasy. Dámské, pánské i dětské.
-                Ústí nad Labem, Severní Terasa.
+                Profesionální péče o vaše vlasy.
+                <br />
+                Dámské, pánské i dětské střihy.
+                <br />
+                {"Ústí\u00A0nad\u00A0Labem"}, {"Severní\u00A0Terasa"}.
               </p>
             </Reveal>
           </div>
