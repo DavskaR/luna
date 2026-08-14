@@ -129,7 +129,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="top"
-      className="relative h-[100svh] min-h-[720px] overflow-hidden bg-obsidian"
+      className="relative h-[100svh] min-h-[560px] overflow-hidden bg-obsidian md:min-h-[720px]"
     >
       {/* photographic base */}
       <div
@@ -206,7 +206,7 @@ export default function Hero() {
       >
         <h1
           className="relative font-serif font-black leading-[0.8] tracking-[-0.02em] text-ivory"
-          style={{ fontSize: "clamp(6.5rem, 19.5vw, 20rem)" }}
+          style={{ fontSize: "clamp(6rem, 19.5vw, 22rem)" }}
         >
           <span
             data-ab-layer
@@ -237,7 +237,7 @@ export default function Hero() {
       </div>
 
       {/* info tile: bottom left */}
-      <div className="absolute bottom-24 left-[6vw] z-10 max-w-md lg:bottom-28">
+      <div className="absolute bottom-20 left-[5vw] z-10 max-w-[92vw] md:bottom-24 md:max-w-md lg:bottom-28 lg:left-[6vw]">
         <div data-hero-fade className="border-l border-ivory/30 pl-6 lg:pl-8">
           <p className="font-serif text-xl italic leading-snug text-ivory-soft lg:text-2xl">
             Profesionální péče o vaše vlasy
@@ -268,7 +268,7 @@ export default function Hero() {
       {/* scroll cue */}
       <div
         data-hero-fade
-        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-3"
+        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 [@media(min-height:680px)]:flex"
       >
         <span className="text-[9px] uppercase tracking-[0.42em] text-ivory/60">
           Posuňte dolů

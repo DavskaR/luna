@@ -35,7 +35,7 @@ const columns = [
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-ivory/10 bg-obsidian">
-      <div className="mx-auto max-w-[1500px] px-6 pt-24 lg:px-12">
+      <div className="luna-container pt-24">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Reveal>

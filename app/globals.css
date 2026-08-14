@@ -278,3 +278,43 @@ body {
 .float-y {
   animation: float-y 6s ease-in-out infinite;
 }
+
+/* ----------------------------- shared container ------------------------------ */
+
+.luna-container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1500px;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .luna-container {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .luna-container {
+    padding-inline: 3rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .luna-container {
+    max-width: 1660px;
+    padding-inline: 4rem;
+  }
+}
+
+/* ----------------------------- reduced motion -------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track,
+  .grain-overlay,
+  .float-y,
+  .scroll-dot,
+  .pulse-ring {
+    animation: none !important;
+  }
+}

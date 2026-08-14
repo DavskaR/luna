@@ -87,7 +87,7 @@ export default function Kontakt() {
         <div className="vignette absolute inset-0" />
       </div>
 
-      <div className="relative mx-auto max-w-[1500px] px-6 py-32 lg:px-12 lg:py-44">
+      <div className="luna-container relative py-32 lg:py-44">
         <Reveal className="flex items-center gap-5">
           <span className="font-serif text-sm italic text-ivory-dim">04</span>
           <span className="h-px w-16 bg-ivory/30" />
@@ -96,7 +96,7 @@ export default function Kontakt() {
           </p>
         </Reveal>
 
-        <h2 className="mt-16 max-w-5xl font-serif text-4xl font-medium leading-[1.12] text-ivory sm:text-5xl lg:mt-24 lg:text-7xl">
+        <h2 className="mt-16 max-w-5xl font-serif text-4xl font-medium leading-[1.12] text-ivory sm:text-5xl lg:mt-24 lg:text-7xl 2xl:text-8xl">
           <span className="block">
             <SplitWords
               text="Domluvte si termín."
@@ -124,7 +124,7 @@ export default function Kontakt() {
             <Reveal>
               <a
                 href="tel:+420775209128"
-                className="group relative inline-flex items-center gap-5 overflow-hidden rounded-full border border-ivory/40 px-10 py-5 text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory transition-colors duration-500 hover:text-obsidian"
+                className="group relative inline-flex items-center gap-5 overflow-hidden rounded-full border border-ivory/40 px-8 py-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory transition-colors duration-500 hover:text-obsidian sm:px-10 sm:py-5"
               >
                 <span className="absolute inset-0 -translate-x-full bg-ivory transition-transform duration-500 ease-out group-hover:translate-x-0" />
                 <span className="relative">Zavolejte nám</span>

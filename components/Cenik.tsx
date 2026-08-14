@@ -128,7 +128,7 @@ function PriceBlock({ group, delay }: { group: PriceGroup; delay?: number }) {
 export default function Cenik() {
   return (
     <section id="cenik" className="relative bg-obsidian py-28 lg:py-40">
-      <div className="mx-auto max-w-[1500px] px-6 lg:px-12">
+      <div className="luna-container">
         <Reveal className="flex items-center gap-5">
           <span className="font-serif text-sm italic text-ivory-dim">02</span>
           <span className="h-px w-16 bg-ivory/30" />
@@ -141,7 +141,7 @@ export default function Cenik() {
           {/* intro column */}
           <div className="lg:col-span-3">
             <Reveal delay={0.08}>
-              <h2 className="font-serif text-3xl font-medium leading-tight text-ivory lg:text-5xl">
+              <h2 className="font-serif text-3xl font-medium leading-tight text-ivory lg:text-5xl 2xl:text-6xl">
                 Férové ceny,
                 <br />
                 <span className="italic text-ivory-soft">poctivá práce.</span>
@@ -152,7 +152,7 @@ export default function Cenik() {
               </p>
             </Reveal>
             <Reveal delay={0.16} className="mt-10">
-              <div className="group relative aspect-[4/5] overflow-hidden rounded-xl ring-1 ring-ivory/15">
+              <div className="group relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl ring-1 ring-ivory/15 lg:mx-0 lg:max-w-none">
                 <Image
                   src={images.cenik.src}
                   alt={images.cenik.alt}

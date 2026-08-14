@@ -72,7 +72,7 @@ export default function Galerie() {
 
   return (
     <section id="galerie" className="relative bg-coal py-28 lg:py-40">
-      <div className="mx-auto max-w-[1500px] px-6 lg:px-12">
+      <div className="luna-container">
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <Reveal className="flex items-center gap-5">
             <span className="font-serif text-sm italic text-ivory-dim">03</span>

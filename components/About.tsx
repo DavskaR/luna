@@ -30,7 +30,7 @@ export default function About() {
       {/* bristle texture field */}
       <div className="bristle bristle-fade absolute inset-0" aria-hidden="true" />
 
-      <div className="relative mx-auto max-w-[1500px] px-6 lg:px-12">
+      <div className="luna-container relative">
         <Reveal className="flex items-center gap-5">
           <span className="font-serif text-sm italic text-ivory-dim">01</span>
           <span className="h-px w-16 bg-ivory/30" />
@@ -42,7 +42,7 @@ export default function About() {
         <div className="mt-16 grid grid-cols-1 gap-16 lg:mt-24 lg:grid-cols-12 lg:gap-8">
           {/* statement */}
           <div className="lg:col-span-7">
-            <h2 className="font-serif text-4xl font-medium leading-[1.08] text-ivory sm:text-5xl xl:text-6xl">
+            <h2 className="font-serif text-4xl font-medium leading-[1.08] text-ivory sm:text-5xl xl:text-6xl 2xl:text-7xl">
               <span className="block">
                 <SplitWords
                   text="Vlasy nejsou jen účes."

@@ -37,7 +37,7 @@ export default function FooterWordmark() {
       aria-hidden="true"
       className="select-none text-center font-serif font-black leading-[0.78] tracking-[-0.02em]"
       style={{
-        fontSize: "clamp(6rem, 18vw, 19rem)",
+        fontSize: "clamp(6rem, 18vw, 22rem)",
         color: "transparent",
         WebkitTextStroke: "1px rgba(236,229,216,0.55)",
       }}
