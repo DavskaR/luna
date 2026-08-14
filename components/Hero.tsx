@@ -94,12 +94,19 @@ export default function Hero() {
         className="absolute inset-0 will-change-transform"
       >
         <Image
-          src={images.hero.src}
-          alt={images.hero.alt}
+          src={images.hero.desktop.src}
+          alt={images.hero.desktop.alt}
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[62%_center]"
+          className="hidden object-cover object-[50%_35%] md:block"
+        />
+        <Image
+          src={images.hero.mobile.src}
+          alt={images.hero.mobile.alt}
+          fill
+          sizes="100vw"
+          className="block object-cover object-[50%_35%] md:hidden"
         />
       </div>
 

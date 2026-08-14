@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     images: [
       {
-        url: "https://luna-ten-murex.vercel.app/photos/hero.jpg",
-        width: 1200,
-        height: 1600,
+        url: "https://luna-ten-murex.vercel.app/media/hero-desktop.jpg",
+        width: 1600,
+        height: 900,
         alt: "Kadeřnictví LUNA | Ústí nad Labem",
       },
     ],
