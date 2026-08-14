@@ -13,19 +13,15 @@ export default function FooterWordmark() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         el,
-        {
-          color: "rgba(236,229,216,0)",
-          WebkitTextStrokeColor: "rgba(236,229,216,0.55)",
-        },
+        { color: "rgba(236,229,216,0)" },
         {
           color: "rgba(236,229,216,1)",
-          WebkitTextStrokeColor: "rgba(236,229,216,0)",
-          ease: "none",
+          duration: 3.5,
+          ease: "power1.inOut",
           scrollTrigger: {
             trigger: el,
-            start: "top bottom",
-            end: "max",
-            scrub: 1.2,
+            start: "bottom 96%",
+            once: true,
           },
         }
       );
