@@ -43,6 +43,19 @@ export default function Kontakt() {
           },
         }
       );
+
+      gsap.fromTo(
+        "[data-kontakt-float]",
+        { xPercent: -1.6, yPercent: -1.1 },
+        {
+          xPercent: 1.6,
+          yPercent: 1.4,
+          duration: 13,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        }
+      );
     }, section);
 
     return () => ctx.revert();
@@ -57,13 +70,18 @@ export default function Kontakt() {
       {/* interior backdrop */}
       <div className="absolute inset-0">
         <div data-kontakt-img className="absolute inset-0 will-change-transform">
-          <Image
-            src={images.kontakt.src}
-            alt={images.kontakt.alt}
-            fill
-            sizes="100vw"
-            className="object-cover"
-          />
+          <div
+            data-kontakt-float
+            className="absolute inset-0 scale-110 blur-[2px] will-change-transform"
+          >
+            <Image
+              src={images.kontakt.src}
+              alt={images.kontakt.alt}
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/55 to-obsidian" />
         <div className="vignette absolute inset-0" />
