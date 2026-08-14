@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import FooterWordmark from "@/components/FooterWordmark";
 
 const columns = [
   {
@@ -96,15 +97,7 @@ export default function Footer() {
         </div>
 
         {/* giant wordmark */}
-        <Reveal y={90} className="mt-24 overflow-hidden lg:mt-28">
-          <p
-            aria-hidden="true"
-            className="outline-text select-none text-center font-serif font-black leading-[0.78] tracking-[-0.02em]"
-            style={{ fontSize: "clamp(6rem, 18vw, 19rem)" }}
-          >
-            LUNA
-          </p>
-        </Reveal>
+        <FooterWordmark />
 
         <div className="mt-4 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 py-7 text-[10px] uppercase tracking-[0.28em] text-ivory-dim sm:flex-row">
           <p>© 2026 Kadeřnictví LUNA, {"Ústí\u00A0nad\u00A0Labem"}</p>
