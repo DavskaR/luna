@@ -113,14 +113,14 @@ export default function Hero() {
             fill
             priority
             sizes="100vw"
-            className="hidden object-cover object-[50%_35%] md:block"
+            className="hidden object-cover object-[50%_50%] md:block"
           />
           <Image
             src={images.hero.mobile.src}
             alt={images.hero.mobile.alt}
             fill
             sizes="100vw"
-            className="block object-cover object-[50%_35%] md:hidden"
+            className="block object-cover object-[50%_50%] md:hidden"
           />
         </div>
       </div>
