@@ -120,10 +120,7 @@ export default function Galerie() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
-              <figcaption className="mt-4 flex items-center justify-between border-b border-ivory/10 pb-3 transition-colors duration-500 group-hover:border-ivory/30">
-                <span className="font-serif text-base italic text-ivory-soft transition-colors duration-500 group-hover:text-ivory">
-                  Naše práce
-                </span>
+              <figcaption className="mt-4 flex items-center justify-end border-b border-ivory/10 pb-3 transition-colors duration-500 group-hover:border-ivory/30">
                 <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim transition-transform duration-500 group-hover:-translate-y-0.5">
                   {String(i + 1).padStart(2, "0")}
                 </span>
