@@ -96,7 +96,7 @@ export default function Footer() {
         </div>
 
         {/* giant wordmark */}
-        <Reveal y={90} className="mt-24 overflow-hidden lg:mt-28">
+        <Reveal y={90} start="top bottom" className="mt-24 overflow-hidden lg:mt-28">
           <p
             aria-hidden="true"
             className="outline-text select-none text-center font-serif font-black leading-[0.78] tracking-[-0.02em]"
