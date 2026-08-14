@@ -128,26 +128,27 @@ export default function Hero() {
       {/* chiaroscuro grading */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/60 to-transparent" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/80" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-obsidian/65 via-obsidian/25 to-transparent" />
       <div className="vignette pointer-events-none absolute inset-0" />
 
       {/* meta column: right */}
       <div
         data-hero-fade
-        className="absolute right-10 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-end gap-12 text-right lg:flex"
+        className="absolute right-10 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-end gap-12 text-right [text-shadow:0_2px_14px_rgba(10,9,8,0.9)] lg:flex"
       >
         <div>
-          <p className="text-[10px] uppercase tracking-[0.34em] text-ivory-dim">
+          <p className="text-[10px] uppercase tracking-[0.34em] text-ivory/80">
             Kde nás najdete
           </p>
-          <p className="mt-1 text-[11px] tracking-[0.18em] text-ivory/85">
+          <p className="mt-1 text-[11px] tracking-[0.18em] text-ivory">
             {"Mírová\u00A02861/6"}
             <br />
             {"Severní\u00A0Terasa"}
           </p>
         </div>
-        <div className="h-24 w-px bg-gradient-to-b from-transparent via-ivory/40 to-transparent" />
+        <div className="h-24 w-px bg-gradient-to-b from-transparent via-ivory/60 to-transparent" />
         <div>
-          <p className="text-[10px] uppercase tracking-[0.34em] text-ivory-dim">
+          <p className="text-[10px] uppercase tracking-[0.34em] text-ivory/80">
             {"Ústí\u00A0nad\u00A0Labem"}
           </p>
           <p className="mt-1 font-serif text-2xl italic text-ivory">
