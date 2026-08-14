@@ -18,9 +18,10 @@ export default function FooterWordmark() {
           color: "rgba(236,229,216,1)",
           duration: 3.5,
           ease: "power1.inOut",
+          delay: 0.15,
           scrollTrigger: {
             trigger: el,
-            start: "bottom 96%",
+            start: "top bottom",
             once: true,
           },
         }
