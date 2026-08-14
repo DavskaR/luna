@@ -133,20 +133,20 @@ export default function About() {
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-4 lg:col-start-9 lg:justify-end">
             <Reveal delay={0.15}>
               <figure className="relative">
-                <div className="relative h-72 w-72 overflow-hidden rounded-full ring-1 ring-ivory/20 lg:h-80 lg:w-80">
+                <div className="group relative h-72 w-72 overflow-hidden rounded-full ring-1 ring-ivory/20 lg:h-80 lg:w-80">
                   <Image
                     src={images.portrait.src}
                     alt={images.portrait.alt}
                     fill
                     sizes="(min-width: 1024px) 320px, 288px"
-                    className="object-cover grayscale"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_60px_rgba(10,9,8,0.9)]" />
                 </div>
                 <figcaption className="mt-4 text-center text-[9px] uppercase tracking-[0.34em] text-ivory-dim">
                   Péče s citem, každý den
                 </figcaption>
-                <span className="chrome-text absolute -left-8 top-8 font-serif text-6xl italic opacity-80">
+                <span className="float-y chrome-text absolute -left-8 top-8 font-serif text-6xl italic opacity-80">
                   ✂
                 </span>
               </figure>

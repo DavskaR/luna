@@ -10,9 +10,13 @@ const layout = [
   { span: "lg:col-span-7", aspect: "aspect-[4/5]", item: images.gallery[0] },
   { span: "lg:col-span-5", aspect: "aspect-[4/5]", item: images.gallery[1] },
   { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.gallery[2] },
-  { span: "lg:col-span-4", aspect: "aspect-square", item: images.gallery[3] },
+  { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.gallery[3] },
   { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.gallery[4] },
-  { span: "lg:col-span-6", aspect: "aspect-[16/10]", item: images.gallery[5] },
+  {
+    span: "lg:col-span-4 lg:col-start-5",
+    aspect: "aspect-[3/4]",
+    item: images.gallery[5],
+  },
 ];
 
 export default function Galerie() {
@@ -46,10 +50,10 @@ export default function Galerie() {
         if (img) {
           gsap.fromTo(
             img,
-            { yPercent: -10, scale: 1.18 },
+            { yPercent: -8, scale: 1.12 },
             {
-              yPercent: 10,
-              scale: 1.18,
+              yPercent: 8,
+              scale: 1.12,
               ease: "none",
               scrollTrigger: {
                 trigger: item,
@@ -108,19 +112,19 @@ export default function Galerie() {
                     alt={cell.item.alt}
                     fill
                     sizes="(min-width: 1024px) 46vw, 92vw"
-                    className="object-cover transition-[filter] duration-700 group-hover:grayscale-0 grayscale-[35%]"
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   />
                 </div>
                 <div className="absolute inset-0 bg-obsidian/10 transition-opacity duration-700 group-hover:opacity-0" />
-                <span className="absolute left-5 top-5 font-serif text-xs italic text-ivory/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                <span className="absolute left-5 top-5 font-serif text-xs italic text-ivory/70 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </div>
-              <figcaption className="mt-4 flex items-center justify-between border-b border-ivory/10 pb-3">
-                <span className="font-serif text-base italic text-ivory-soft">
+              <figcaption className="mt-4 flex items-center justify-between border-b border-ivory/10 pb-3 transition-colors duration-500 group-hover:border-ivory/30">
+                <span className="font-serif text-base italic text-ivory-soft transition-colors duration-500 group-hover:text-ivory">
                   Naše práce
                 </span>
-                <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
+                <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim transition-transform duration-500 group-hover:-translate-y-0.5">
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </figcaption>

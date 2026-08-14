@@ -152,13 +152,13 @@ export default function Cenik() {
               </p>
             </Reveal>
             <Reveal delay={0.16} className="mt-10">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-xl ring-1 ring-ivory/15">
+              <div className="group relative aspect-[4/5] overflow-hidden rounded-xl ring-1 ring-ivory/15">
                 <Image
                   src={images.cenik.src}
                   alt={images.cenik.alt}
                   fill
                   sizes="(min-width: 1024px) 25vw, 90vw"
-                  className="object-cover grayscale-[15%] transition-[filter] duration-700 hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 to-transparent" />
                 <p className="absolute bottom-4 left-4 font-serif text-sm italic text-ivory">

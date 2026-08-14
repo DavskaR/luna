@@ -19,8 +19,8 @@ export default function Hero() {
       const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
       tl.fromTo(
         "[data-hero-img]",
-        { scale: 1.22, filter: "brightness(0.3)" },
-        { scale: 1, filter: "brightness(0.62)", duration: 2.2, ease: "power2.out" }
+        { scale: 1.22, filter: "brightness(0.5)" },
+        { scale: 1, filter: "brightness(1)", duration: 2.2, ease: "power2.out" }
       )
         .fromTo(
           "[data-hero-letter]",
@@ -40,6 +40,19 @@ export default function Hero() {
           { y: 0, autoAlpha: 1, duration: 1.1, stagger: 0.12 },
           1.05
         );
+
+      /* ------------------------- slow ken burns drift -------------------------- */
+      gsap.fromTo(
+        "[data-hero-kenburns]",
+        { scale: 1 },
+        {
+          scale: 1.08,
+          duration: 22,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        }
+      );
 
       /* ----------------------------- scroll parallax ----------------------------- */
       gsap.to("[data-hero-img]", {
@@ -93,21 +106,23 @@ export default function Hero() {
         data-mouse-img
         className="absolute inset-0 will-change-transform"
       >
-        <Image
-          src={images.hero.desktop.src}
-          alt={images.hero.desktop.alt}
-          fill
-          priority
-          sizes="100vw"
-          className="hidden object-cover object-[50%_35%] md:block"
-        />
-        <Image
-          src={images.hero.mobile.src}
-          alt={images.hero.mobile.alt}
-          fill
-          sizes="100vw"
-          className="block object-cover object-[50%_35%] md:hidden"
-        />
+        <div data-hero-kenburns className="absolute inset-0 will-change-transform">
+          <Image
+            src={images.hero.desktop.src}
+            alt={images.hero.desktop.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="hidden object-cover object-[50%_35%] md:block"
+          />
+          <Image
+            src={images.hero.mobile.src}
+            alt={images.hero.mobile.alt}
+            fill
+            sizes="100vw"
+            className="block object-cover object-[50%_35%] md:hidden"
+          />
+        </div>
       </div>
 
       {/* chiaroscuro grading */}

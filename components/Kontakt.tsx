@@ -1,4 +1,8 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
+import { gsap } from "@/lib/gsap";
 import Reveal from "@/components/Reveal";
 import SplitWords from "@/components/SplitWords";
 import { images } from "@/lib/images";
@@ -17,18 +21,51 @@ const contacts = [
 ];
 
 export default function Kontakt() {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        "[data-kontakt-img]",
+        { yPercent: -12, scale: 1.18 },
+        {
+          yPercent: 12,
+          scale: 1.18,
+          ease: "none",
+          scrollTrigger: {
+            trigger: section,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+    }, section);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section id="kontakt" className="relative overflow-hidden bg-obsidian">
+    <section
+      ref={sectionRef}
+      id="kontakt"
+      className="relative overflow-hidden bg-obsidian"
+    >
       {/* interior backdrop */}
       <div className="absolute inset-0">
-        <Image
-          src={images.kontakt.src}
-          alt={images.kontakt.alt}
-          fill
-          sizes="100vw"
-          className="object-cover opacity-45"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/70 to-obsidian" />
+        <div data-kontakt-img className="absolute inset-0 will-change-transform">
+          <Image
+            src={images.kontakt.src}
+            alt={images.kontakt.alt}
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/55 to-obsidian" />
         <div className="vignette absolute inset-0" />
       </div>
 

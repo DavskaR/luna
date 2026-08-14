@@ -262,3 +262,19 @@ body {
 .pulse-ring {
   animation: pulse-ring 4s ease-in-out infinite;
 }
+
+/* -------------------------------- gentle float ------------------------------- */
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-6deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+.float-y {
+  animation: float-y 6s ease-in-out infinite;
+}
