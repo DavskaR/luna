@@ -54,6 +54,37 @@ export default function Hero() {
         }
       );
 
+      /* -------------------- living chromatic aberration -------------------- */
+      gsap.fromTo(
+        ".ab-cyan",
+        { x: 4, y: 1, skewX: 0.5, filter: "blur(1px)" },
+        {
+          x: 9,
+          y: -3,
+          skewX: 1.1,
+          filter: "blur(1.8px)",
+          duration: 2.6,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+        }
+      );
+      gsap.fromTo(
+        ".ab-red",
+        { x: -4, y: -1, skewX: -0.5, filter: "blur(1px)" },
+        {
+          x: -9,
+          y: 3,
+          skewX: -1.1,
+          filter: "blur(1.8px)",
+          duration: 3.3,
+          ease: "sine.inOut",
+          yoyo: true,
+          repeat: -1,
+          delay: 0.4,
+        }
+      );
+
       /* ----------------------------- scroll parallax ----------------------------- */
       gsap.to("[data-hero-img]", {
         yPercent: 14,
