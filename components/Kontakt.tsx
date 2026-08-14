@@ -22,11 +22,11 @@ export default function Kontakt() {
       {/* interior backdrop */}
       <div className="absolute inset-0">
         <Image
-          src={images.interior.src}
-          alt={images.interior.alt}
+          src={images.kontakt.src}
+          alt={images.kontakt.alt}
           fill
           sizes="100vw"
-          className="object-cover opacity-35"
+          className="object-cover opacity-45"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian via-obsidian/70 to-obsidian" />
         <div className="vignette absolute inset-0" />

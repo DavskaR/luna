@@ -109,15 +109,7 @@ export default function Footer() {
         <div className="mt-4 flex flex-col items-center justify-between gap-4 border-t border-ivory/10 py-7 text-[10px] uppercase tracking-[0.28em] text-ivory-dim sm:flex-row">
           <p>© 2026 Kadeřnictví LUNA, {"Ústí\u00A0nad\u00A0Labem"}</p>
           <p>
-            Ilustrační fotografie:{" "}
-            <a
-              href="https://unsplash.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-line text-ivory/70 hover:text-ivory"
-            >
-              Unsplash
-            </a>
+            Fotografie: archiv {"Kadeřnictví\u00A0LUNA"}
           </p>
         </div>
       </div>

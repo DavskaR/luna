@@ -7,12 +7,12 @@ import Reveal from "@/components/Reveal";
 import { images } from "@/lib/images";
 
 const layout = [
-  { span: "lg:col-span-7", aspect: "aspect-[4/5]", item: images.lookbook[0] },
-  { span: "lg:col-span-5", aspect: "aspect-[4/5]", item: images.lookbook[1] },
-  { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.lookbook[2] },
-  { span: "lg:col-span-4", aspect: "aspect-square", item: images.lookbook[3] },
-  { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.lookbook[4] },
-  { span: "lg:col-span-6", aspect: "aspect-[16/10]", item: images.lookbook[5] },
+  { span: "lg:col-span-7", aspect: "aspect-[4/5]", item: images.gallery[0] },
+  { span: "lg:col-span-5", aspect: "aspect-[4/5]", item: images.gallery[1] },
+  { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.gallery[2] },
+  { span: "lg:col-span-4", aspect: "aspect-square", item: images.gallery[3] },
+  { span: "lg:col-span-4", aspect: "aspect-[3/4]", item: images.gallery[4] },
+  { span: "lg:col-span-6", aspect: "aspect-[16/10]", item: images.gallery[5] },
 ];
 
 export default function Galerie() {
@@ -79,8 +79,8 @@ export default function Galerie() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/60">
-              Inspirace z naší tvorby: od platinové blond po hluboké tmavé
-              tóny. Vaše vysněné vlasy začínají tady.
+              Ukázky naší práce: od platinové blond po hluboké tmavé tóny.
+              Vaše vysněné vlasy začínají tady.
             </p>
           </Reveal>
         </div>
@@ -118,10 +118,10 @@ export default function Galerie() {
               </div>
               <figcaption className="mt-4 flex items-center justify-between border-b border-ivory/10 pb-3">
                 <span className="font-serif text-base italic text-ivory-soft">
-                  {cell.item.caption}
+                  Naše práce
                 </span>
                 <span className="text-[9px] uppercase tracking-[0.3em] text-ivory-dim">
-                  Inspirace
+                  {String(i + 1).padStart(2, "0")}
                 </span>
               </figcaption>
             </figure>
