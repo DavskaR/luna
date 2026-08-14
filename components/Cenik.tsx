@@ -160,10 +160,6 @@ export default function Cenik() {
                   sizes="(min-width: 1024px) 25vw, 90vw"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 to-transparent" />
-                <p className="absolute bottom-4 left-4 font-serif text-sm italic text-ivory">
-                  S důvěrou i pro ty nejmenší
-                </p>
               </div>
             </Reveal>
             <Reveal delay={0.22} className="mt-8 flex flex-col gap-3">

@@ -119,15 +119,6 @@ export default function About() {
                 </Reveal>
               ))}
             </div>
-            {/* awards */}
-            <Reveal delay={0.2} className="mt-10 flex flex-wrap items-center gap-4">
-              <span className="rounded-full border border-ivory/25 px-5 py-2 text-[10px] uppercase tracking-[0.28em] text-ivory/85">
-                ★ Laureát {"Orlové\u00A0krásky"} 2026
-              </span>
-              <span className="rounded-full border border-ivory/25 px-5 py-2 text-[10px] uppercase tracking-[0.28em] text-ivory/85">
-                ★ Vítěz soutěže {"Zlatá\u00A0firma"}
-              </span>
-            </Reveal>
           </div>
 
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-4 lg:col-start-9 lg:justify-end">

@@ -214,8 +214,6 @@ export default function Hero() {
           </p>
           <p className="mt-5 max-w-sm text-[13px] leading-relaxed tracking-wide text-ivory/70">
             Střihy, barvení, melírování, balayage, keratin i svatební účesy.
-            Laureát plebiscitu {"Orlové\u00A0krásky"} 2026 a vítěz soutěže{" "}
-            {"Zlatá\u00A0firma"}.
           </p>
         </div>
         <div data-hero-fade className="mt-8 flex items-center gap-6">
