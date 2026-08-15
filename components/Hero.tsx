@@ -248,7 +248,7 @@ export default function Hero() {
             Střihy, barvení, melírování, balayage, keratin i svatební účesy.
           </p>
         </div>
-        <div data-hero-fade className="mt-8 flex items-center gap-6">
+        <div data-hero-fade className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2">
           <a
             href="tel:+420775209128"
             className="link-line text-[11px] font-semibold uppercase tracking-[0.3em] text-ivory"
@@ -268,7 +268,7 @@ export default function Hero() {
       {/* scroll cue */}
       <div
         data-hero-fade
-        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 [@media(min-height:680px)]:flex"
+        className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-3 md:flex"
       >
         <span className="text-[9px] uppercase tracking-[0.42em] text-ivory/60">
           Posuňte dolů
