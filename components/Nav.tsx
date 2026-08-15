@@ -38,8 +38,9 @@ export default function Nav() {
 
   const go = (e: MouseEvent, hash: string) => {
     e.preventDefault();
+    getLenis()?.start();
     setOpen(false);
-    scrollToId(hash);
+    window.setTimeout(() => scrollToId(hash), 60);
   };
 
   return (
