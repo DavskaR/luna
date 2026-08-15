@@ -44,14 +44,15 @@ export default function Nav() {
   };
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
-        scrolled && !open
-          ? "bg-obsidian/70 backdrop-blur-md border-b border-ivory/10"
-          : "bg-transparent border-b border-transparent"
-      }`}
-    >
-      <nav className="flex items-center justify-between px-6 py-4 sm:px-8 lg:px-12 lg:py-5">
+    <>
+      <header
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
+          scrolled && !open
+            ? "bg-obsidian/70 backdrop-blur-md border-b border-ivory/10"
+            : "bg-transparent border-b border-transparent"
+        }`}
+      >
+        <nav className="flex items-center justify-between px-6 py-4 sm:px-8 lg:px-12 lg:py-5">
         <a
           href="#top"
           onClick={(e) => go(e, "#top")}
@@ -136,6 +137,7 @@ export default function Nav() {
           />
         </button>
       </nav>
+      </header>
 
       {/* mobile overlay menu */}
       <div
@@ -198,6 +200,6 @@ export default function Nav() {
           </div>
         </nav>
       </div>
-    </header>
+    </>
   );
 }
